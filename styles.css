@@ -458,13 +458,6 @@ textarea:focus {
   color: #045b66;
 }
 
-
-
-
-
-
-
-
   footer {
     background-color:#cdeaee;
     color: #045b66;
@@ -474,6 +467,18 @@ textarea:focus {
     font-size: 0.8rem;
     min-height: 80px;
     box-shadow: 0 0 10px rgb(128, 126, 126);
+    position: relative;
+  }
+
+  .top {
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    background: rgba(4, 96, 114, 0.7);
+    border-radius: 10px;
   }
   
   /* footer div {
