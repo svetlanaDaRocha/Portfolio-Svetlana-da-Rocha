@@ -197,7 +197,8 @@
     padding-top: 0.7em;
   }
 
-  .education, .work-experience {
+  .education, 
+  .work-experience {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -205,6 +206,11 @@
     box-shadow: 0 0 25px 1px #034c55;
     transition: all 0.5s;
     margin: 0.9em;
+  }
+
+  .education p, 
+  .work-experience p {
+  font-size: 0.9rem;
   }
 
 .projects {
@@ -237,7 +243,9 @@
     display: none;
   }
 
-  p {
+  p,
+  .education p,
+  .work-experience p {
     font-size: 0.8rem;
   }
 
@@ -472,7 +480,7 @@ textarea:focus {
   color: #045b66;
 }
 
-  footer {
+footer {
     background-color:#cdeaee;
     color: #045b66;
     display: flex;
@@ -482,9 +490,9 @@ textarea:focus {
     min-height: 80px;
     box-shadow: 0 0 10px rgb(128, 126, 126);
     position: relative;
-  }
+}
 
-  .top {
+.top {
     position: fixed;
     bottom: 20px;
     right: 5px;
@@ -492,8 +500,9 @@ textarea:focus {
     padding: 10px;
     color: #fff;
     background: rgba(4, 96, 114, 0.7);
+    /* background: rgba(245, 186, 25, 0.7); */
     border-radius: 10px;
-  }
+}
   
 
  
