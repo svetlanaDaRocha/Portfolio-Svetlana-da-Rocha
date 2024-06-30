@@ -5,7 +5,6 @@
   }
   
   body {
-    /* min-height: 100vh; */
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
@@ -238,7 +237,6 @@
     display: none;
   }
 
-
   p {
     font-size: 0.8rem;
   }
@@ -289,13 +287,12 @@
 .image:hover {
   box-shadow: 0 0 25px 1px #e6f4f6;
 }
+
   .skills {
     display: grid;
     grid-auto-rows: 40vh;
     align-items: center;
     justify-items: center;  
-    /* background-color: #cdeaee;   */
-    /* margin-top: 60px; */
   }
 
   .skills h2 {
@@ -418,12 +415,12 @@ textarea:focus {
 #submit {
   border: 2px solid #38adbb;
   color: white;
+  font-weight: bold;
   background: radial-gradient(#56a5af, #0799AA);
-  box-shadow: 0 0 10px 1px #034c55;
- 
+  box-shadow: 0 0 10px 1px #034c55; 
   padding: 8px;
   width: 50%;
-  border-radius: 8px;
+  border-radius: 10px;
   margin: 20px 0;
   align-self: center;
   transition: all 0.5s;
@@ -431,17 +428,34 @@ textarea:focus {
 
 #submit:hover {
   transform: scale(1.1);  
-  cursor: pointer;
-  box-shadow: 0 0 25px 1px #cdeaee;
-  font-weight: bold;
+  cursor: pointer;  
+  animation: neon 0.5s 0.1s forwards steps(4, end);
+}
+
+@keyframes neon {
+  0% {
+    border-top: 3px solid #cdeaee;
+  }
+  25% {
+    border-right: 3px solid #cdeaee;
+  }
+  50% {
+    border-bottom: 3px solid #cdeaee;
+  }
+  75% {
+    border-left: 3px solid #cdeaee;
+  }
+  100% {
+    color: #045b66;
+    background: #cdeaee;
+    box-shadow: 0px 0px 30px 8px #cdeaee;
+    border: 3px solid #cdeaee
+  }
 }
 
 .social-media {
   display: flex;
   justify-content: center;
-  /* background-color: #9bd6dd;
-  border-radius: 10px;
-  border: 3px solid white;  */
 }
 
 .icon {
@@ -481,56 +495,5 @@ textarea:focus {
     border-radius: 10px;
   }
   
-  /* footer div {
-    height: 50px;
-    width: 160px;
-    border-radius: 50px;
-    background-color: #045b66;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer; */
-    /* transition: all 5s;
-  }
-  
-  .home-button {
-    margin-right: 20px;
-  }
-  
-  .about-button {
-    margin-left: 20px;
-  }
-  
-  .home-button:hover {
-    animation: neon 2s 0.3s forwards steps(4, end);
-  }
-  
-  .about-button:hover {
-    animation: neon 2s 0.3s forwards steps(4, end);
-  }
-  
-  @keyframes neon {
-    0% {
-      border-top: 3px solid #38adbb;
-    }
-    20% {
-      border-right: 3px solid #38adbb;
-    }
-    40% {
-      border-bottom: 3px solid #38adbb;
-    }
-    60% {
-      border-left: 3px solid #38adbb;
-    }
-    80% {
-      color: #045b66;
-      background-color: #38adbb;
-      box-shadow: 0px 0px 30px 8px #38adbb;
-    }
-    100% {
-      color: #045b66;
-      background-color: #38adbb;
-      box-shadow: 0px 0px 30px 8px #38adbb;
-    }
-  }
-   
+
+ 
